@@ -1,0 +1,27 @@
+<p>This extension integrates Burp Intruder with Hashcat Maskprocessor.</p>
+<p>Maskprocessor is a word generator with a per-position configurable charset</p>
+<p>You can find out more at <a href="https://github.com/hashcat/maskprocessor">https://github.com/hashcat/maskprocessor</a></p>
+
+<p>Usage:</p>
+<p>It can be used with:</p>
+<ul>
+	<li>Built-in charset</li>
+	<li>?l = abcdefghijklmnopqrstuvwxyz</li>
+	<li>?u = ABCDEFGHIJKLMNOPQRSTUVWXYZ</li>
+	<li>?d = 0123456789</li>
+	<li>?s = !"#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~</li>
+	<li>?a = ?l?u?d?s</li>
+	<li>?b = 0x00 - 0xff</li>
+</ul>
+
+<p>Example: Password?d will generate Password0, Password1, Password3 etc.</p>
+
+<p>Custom charsets:</p>
+<ul>
+	<li>-1, --custom-charset1=CS</li>
+	<li>-2, --custom-charset2=CS</li>
+	<li>-3, --custom-charset3=CS</li>
+	<li>-4, --custom-charset4=CS</li>
+</ul>
+
+<p>Example: Password?1 -1 0A@ will generate Password0, PasswordA, Password@</p>

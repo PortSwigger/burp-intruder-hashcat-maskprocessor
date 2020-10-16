@@ -1,0 +1,12 @@
+Uuid: 4a2fa04f480b4edb8a6326598ecd5646
+ExtensionType: 2
+Name: Hashcat Maskprocessor Intruder Payloads
+RepoName: hashcat-maskprocessor
+ScreenVersion: 1.0
+SerialVersion: 1
+MinPlatformVersion: 0
+ProOnly: False
+Author: Quahac
+ShortDescription: This extension integrates Burp Intruder with Hashcat Maskprocessor.
+EntryPoint: hashcat_maskprocessor_extension.py
+BuildCommand: 
